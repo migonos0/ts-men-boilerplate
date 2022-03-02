@@ -1,0 +1,25 @@
+{
+  "name": "ts_node_boilerplate",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "concurrently": "^7.0.0",
+    "dotenv": "^16.0.0",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-tsdoc": "^0.2.14",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "typedoc": "^0.22.12",
+    "typescript": "^4.6.2"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "concurrently \"tsc --watch\" \"nodemon --require dotenv/config dist/index.js\""
+  }
+}
